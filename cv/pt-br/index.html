@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breno Sobral - Currículo</title>
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --text-primary: #333333;
+            --text-secondary: #666666;
+            --accent: #0066cc;
+            --border: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 3rem;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .title {
+            color: var(--accent);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .skill-category h3 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1rem;
+        }
+
+        .company {
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .period {
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-left: 0;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+        }
+
+        .techs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tech-tag {
+            background: #f0f0f0;
+            color: var(--text-primary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        .action-buttons {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .action-button {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+        }
+
+        .action-button:hover {
+            background: #0052a3;
+        }
+
+        @media print {
+            .action-buttons {
+                display: none;
+            }
+
+            body {
+                padding: 0;
+            }
+
+            section {
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .experience-header {
+                flex-direction: column;
+            }
+
+            .contact-info {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="name">BRENO SOBRAL</h1>
+        <div class="title">Engenheiro de Software Sênior</div>
+        <div class="contact-info">
+            <span>📍 Niterói, Rio de Janeiro, Brasil</span>
+            <span>📧 ssobralbreno@gmail.com</span>
+            <span>🔗 linkedin.com/in/breno-sobral</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>RESUMO PROFISSIONAL</h2>
+        <p>
+            Engenheiro de Software Sênior com mais de 8 anos de experiência, especializado em
+            desenvolvimento full-stack e arquitetura em nuvem. Comprovada expertise na construção
+            de microsserviços escaláveis, implementação de soluções em nuvem e liderança de
+            equipes de desenvolvimento. Sólido conhecimento em frameworks JavaScript modernos,
+            plataformas cloud e padrões de arquitetura de software.
+        </p>
+    </section>
+
+    <section>
+        <h2>COMPETÊNCIAS TÉCNICAS</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <ul>
+                    <li>React.js/Next.js</li>
+                    <li>Vue.js</li>
+                    <li>HTML5/CSS3</li>
+                    <li>Tailwind CSS</li>
+                    <li>Styled Components</li>
+                    <li>Material UI, Antd</li>
+                    <li>Chakra UI, Shadcn</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <ul>
+                    <li>Node.js/NestJS</li>
+                    <li>Express.js</li>
+                    <li>Laravel</li>
+                    <li>APIs RESTful</li>
+                    <li>GraphQL</li>
+                    <li>WebSocket/SSE</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Cloud & DevOps</h3>
+                <ul>
+                    <li>AWS Services</li>
+                    <li>GCP</li>
+                    <li>Azure DevOps</li>
+                    <li>Docker</li>
+                    <li>CI/CD Pipelines</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Banco de Dados & Filas</h3>
+                <ul>
+                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                    <li>Redis</li>
+                    <li>RabbitMQ</li>
+                    <li>BullMQ</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>EXPERIÊNCIA PROFISSIONAL</h2>
+        
+        <div class="experience-item">
+            <div class="experience-header">
+                <div>
+                    <div class="company">Firebot - Tibia Monitoring</div>
+                    <div class="role">Fundador & Engenheiro Líder</div>
+                </div>
+                <div class="period">Julho 2024 - Presente</div>
+            </div>
+            <ul>
+                <li>Desenvolvimento de aplicação web inovadora para Tibia MMORPG com recursos premium</li>
+                <li>Implementação de soluções avançadas incluindo reverse proxy, web scraping e SSE em tempo real</li>
+                <li>Liderança da arquitetura técnica completa e implementação</li>
+                <li>Gestão de infraestrutura multi-cloud em GCP, Oracle e Railway</li>
+            </ul>
+            <div class="techs">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Go</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Chakra UI</span>
+                <span class="tech-tag">Shadcn</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div>
+                    <div class="company">Eduzz</div>
+                    <div class="role">Engenheiro de Software Sênior</div>
+                </div>
+                <div class="period">Janeiro 2024 - Julho 2024</div>
+            </div>
+            <ul>
+                <li>Liderou migração de serviço legacy de PHP para Node.js com NestJS</li>
+                <li>Manteve e aprimorou serviços usando Express.js e NestJS</li>
+                <li>Mentoria de desenvolvedores júnior e pleno</li>
+                <li>Trabalho com ecossistemas PHP/Laravel e Node.js</li>
+            </ul>
+            <div class="techs">
+              <div class="techs">
+                <span class="tech-tag">NestJS</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">Laravel</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div>
+                    <div class="company">act digital</div>
+                    <div class="role">Engenheiro de Software II</div>
+                </div>
+                <div class="period">Julho 2022 - Janeiro 2024</div>
+            </div>
+            <ul>
+                <li>Implementação de arquitetura de microsserviços usando NestJS</li>
+                <li>Manutenção e desenvolvimento de aplicações frontend com Vue.js e React.js</li>
+                <li>Promovido de Engenheiro de Software I por desempenho excepcional</li>
+                <li>Criação e manutenção de serviços Backend-For-Frontend (BFF)</li>
+            </ul>
+            <div class="techs">
+                <span class="tech-tag">NestJS</span>
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Microsserviços</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div>
+                    <div class="company">Codezone Digital Business</div>
+                    <div class="role">Engenheiro de Software I</div>
+                </div>
+                <div class="period">Agosto 2021 - Dezembro 2021</div>
+            </div>
+            <ul>
+                <li>Desenvolvimento de soluções full-stack usando Laravel e Node.js</li>
+                <li>Modelagem de banco de dados e desenvolvimento backend</li>
+                <li>Implementação de designs frontend responsivos</li>
+            </ul>
+            <div class="techs">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Frontend Responsivo</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div>
+                    <div class="company">Shosp</div>
+                    <div class="role">Engenheiro de Software Júnior</div>
+                </div>
+                <div class="period">Agosto 2020 - Julho 2021</div>
+            </div>
+            <ul>
+                <li>Desenvolvimento de soluções tecnológicas para área da saúde</li>
+                <li>Trabalho com NodeJs, PHP e jQuery</li>
+                <li>Implementação de arquitetura de microsserviços</li>
+                <li>Contribuição para crescimento e desenvolvimento da startup</li>
+            </ul>
+            <div class="techs">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">jQuery</span>
+                <span class="tech-tag">Microsserviços</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div>
+                    <div class="company">Facilita.tech</div>
+                    <div class="role">Engenheiro de Software Júnior</div>
+                </div>
+                <div class="period">Janeiro 2018 - Julho 2020</div>
+            </div>
+            <ul>
+                <li>Manutenção e desenvolvimento de aplicações full-stack</li>
+                <li>Implementação de soluções de containerização com Docker</li>
+                <li>Aprimoramento de performance e eficiência de serviços</li>
+                <li>Gestão de relacionamentos e requisitos com clientes</li>
+            </ul>
+            <div class="techs">
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Full-stack</span>
+                <span class="tech-tag">Otimização de Performance</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>FORMAÇÃO ACADÊMICA</h2>
+        <div class="experience-item">
+            <div class="experience-header">
+                <div>
+                    <div class="company">FIAP</div>
+                    <div class="role">Pós-graduação em Arquitetura de Software</div>
+                </div>
+                <div class="period">Fevereiro 2024 - Fevereiro 2025</div>
+            </div>
+            <p>Em andamento</p>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div>
+                    <div class="company">Centro Universitário La Salle</div>
+                    <div class="role">Bacharelado em Sistemas de Informação</div>
+                </div>
+                <div class="period">2014 - 2021</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>IDIOMAS</h2>
+        <ul>
+            <li>Inglês (Nativo/Bilíngue)</li>
+            <li>Português (Nativo/Bilíngue)</li>
+        </ul>
+    </section>
+
+    <div class="action-buttons">
+        <button onclick="window.print()" class="action-button">Salvar como PDF</button>
+        <a href="../index.html" class="action-button">Voltar</a>
+    </div>
+</body>
+</html>

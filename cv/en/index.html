@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breno Sobral - Senior Software Engineer</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --border-color: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #fff;
+        }
+
+        header {
+            margin-bottom: 2rem;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 1rem;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-category {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .skill-category h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-title {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .experience-date {
+            color: var(--secondary-color);
+            font-style: italic;
+        }
+
+        .company {
+            font-weight: 500;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin: 0.5rem 0;
+        }
+
+        ul ul {
+            margin-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tech-tag {
+            background: var(--secondary-color);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        .summary {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        @media print {
+            body {
+                padding: 1rem;
+                font-size: 12pt;
+            }
+
+            .no-print {
+                display: none;
+            }
+
+            .tech-tag {
+                border: 1px solid var(--secondary-color);
+                color: var(--secondary-color);
+                background: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .experience-header {
+                flex-direction: column;
+            }
+
+            .contact-info {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BRENO SOBRAL</h1>
+        <div class="subtitle">Senior Software Engineer</div>
+        <div class="contact-info">
+            <span>📍 Niterói, Rio de Janeiro, Brasil</span>
+            <span>📧 ssobralbreno@gmail.com</span>
+            <span>🔗 linkedin.com/in/breno-sobral</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>PROFESSIONAL SUMMARY</h2>
+        <p class="summary">
+            Senior Software Engineer with over 8 years of experience specializing in full-stack development
+            and cloud architecture. Expert in building scalable microservices, implementing cloud solutions,
+            and leading development teams. Proven track record in modern JavaScript frameworks, cloud platforms,
+            and software architecture patterns. Passionate about clean code, performance optimization, and
+            implementing best practices in software development.
+        </p>
+    </section>
+
+    <section>
+        <h2>TECHNICAL SKILLS</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Frontend Development</h3>
+                <ul>
+                    <li>React.js/Next.js</li>
+                    <li>Vue.js</li>
+                    <li>HTML5/CSS3</li>
+                    <li>Tailwind CSS</li>
+                    <li>Styled Components</li>
+                    <li>UI Libraries
+                        <ul>
+                            <li>Material UI</li>
+                            <li>Ant Design</li>
+                            <li>Chakra UI</li>
+                            <li>Shadcn</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Backend Development</h3>
+                <ul>
+                    <li>Node.js/NestJS</li>
+                    <li>Express.js</li>
+                    <li>Laravel</li>
+                    <li>RESTful APIs</li>
+                    <li>GraphQL</li>
+                    <li>WebSocket/SSE</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Cloud & DevOps</h3>
+                <ul>
+                    <li>AWS (EC2, Lambda, S3, RDS, SQS)</li>
+                    <li>GCP</li>
+                    <li>Azure DevOps</li>
+                    <li>Docker</li>
+                    <li>CI/CD Pipelines</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Databases & Queue</h3>
+                <ul>
+                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                    <li>Redis</li>
+                    <li>RabbitMQ</li>
+                    <li>BullMQ</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>PROFESSIONAL EXPERIENCE</h2>
+        
+        <div class="experience-item">
+            <div class="experience-header">
+                <span class="experience-title">Founder & Lead Engineer</span>
+                <span class="experience-date">July 2024 - Present</span>
+            </div>
+            <div class="company">Firebot - Tibia Monitoring</div>
+            <ul>
+                <li>Developed an innovative web application for Tibia MMORPG with premium features</li>
+                <li>Implemented cutting-edge solutions including reverse proxy, web scraping, and real-time SSE</li>
+                <li>Led the entire technical architecture and implementation</li>
+                <li>Managed multi-cloud infrastructure across GCP, Oracle, and Railway platforms</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Go</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Chakra UI</span>
+                <span class="tech-tag">Shadcn</span>
+                <span class="tech-tag">Tailwind CSS</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <span class="experience-title">Senior Software Engineer</span>
+                <span class="experience-date">January 2024 - July 2024</span>
+            </div>
+            <div class="company">Eduzz</div>
+            <ul>
+                <li>Led successful migration of legacy PHP services to Node.js with NestJS</li>
+                <li>Mentored junior and mid-level developers, fostering team growth</li>
+                <li>Maintained and optimized Express.js and NestJS services</li>
+                <li>Implemented best practices and architectural improvements</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">NestJS</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">Microservices</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <span class="experience-title">Software Engineer II</span>
+                <span class="experience-date">July 2022 - January 2024</span>
+            </div>
+            <div class="company">act digital</div>
+            <ul>
+                <li>Implemented microservices architecture using NestJS</li>
+                <li>Developed frontend applications with Vue.js and React.js</li>
+                <li>Created and maintained Backend-For-Frontend (BFF) services</li>
+                <li>Led successful migration from GraphQL to REST</li>
+                <li>Promoted for exceptional performance and technical leadership</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">NestJS</span>
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">GraphQL</span>
+                <span class="tech-tag">Azure</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <span class="experience-title">Software Engineer I</span>
+                <span class="experience-date">August 2021 - December 2021</span>
+            </div>
+            <div class="company">Codezone Digital Business</div>
+            <ul>
+                <li>Developed full-stack solutions using Laravel and Node.js</li>
+                <li>Performed database modeling and backend development</li>
+                <li>Implemented responsive frontend designs</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Responsive Design</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <span class="experience-title">Software Engineer Junior</span>
+                <span class="experience-date">August 2020 - July 2021</span>
+            </div>
+            <div class="company">Shosp</div>
+            <ul>
+                <li>Developed healthcare technology solutions</li>
+                <li>Worked with Node.js, PHP, and jQuery</li>
+                <li>Implemented microservices architecture</li>
+                <li>Contributed to startup growth and development</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">jQuery</span>
+                <span class="tech-tag">Microservices</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <span class="experience-title">Software Engineer Junior</span>
+                <span class="experience-date">January 2018 - July 2020</span>
+            </div>
+            <div class="company">Facilita.tech</div>
+            <ul>
+                <li>Maintained and developed full-stack applications</li>
+                <li>Implemented Docker containerization solutions</li>
+                <li>Enhanced service performance and efficiency</li>
+                <li>Managed client relationships and requirements</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Full-stack</span>
+                <span class="tech-tag">Performance Optimization</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>EDUCATION</h2>
+        <div class="experience-item">
+            <div class="experience-header">
+                <span class="experience-title">Postgraduate in Software Architecture</span>
+                <span class="experience-date">February 2024 - February 2025</span>
+            </div>
+            <div class="company">FIAP</div>
+            <p>Specialization focusing on modern software architecture patterns, distributed systems, and enterprise solutions.</p>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <span class="experience-title">Bachelor's in Information Systems</span>
+                <span class="experience-date">2014 - 2021</span>
+            </div>
+            <div class="company">Centro Universitário La Salle</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>LANGUAGES</h2>
+        <ul>
+            <li>English (Native/Bilingual)</li>
+            <li>Portuguese (Native/Bilingual)</li>
+        </ul>
+    </section>
+
+    <div class="no-print">
+        <button onclick="
