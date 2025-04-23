@@ -6,7 +6,7 @@
     <title>Breno Sobral - Senior Software Engineer</title>
     <style>
         :root {
-            --primary-color: #1A191E;
+            --primary-color: #b8b8b8;
             --secondary-color: #B4D700;
             --text-color: #f0f0f0;
             --light-bg: #282830;
@@ -143,17 +143,42 @@
         }
 
         .tech-tag {
-            background: var(--secondary-color);
+            background: #1A191E;
             color: white;
             padding: 0.25rem 0.75rem;
             border-radius: 15px;
             font-size: 0.9rem;
+            border: 1px solid var(--secondary-color);
         }
 
         .summary {
             font-size: 1.1rem;
             margin-bottom: 2rem;
             line-height: 1.8;
+        }
+
+        .action-buttons {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .action-button {
+            background: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+        }
+
+        .action-button:hover {
+            background: #95b000;
         }
 
         @media print {
@@ -482,7 +507,7 @@
         </ul>
     </section>
 
-    <div class="no-print">
+    <div class="action-buttons">
         <button onclick="window.print()" class="action-button">Save as PDF</button>
         <a href="../index.html" class="action-button">Back</a>
     </div>
