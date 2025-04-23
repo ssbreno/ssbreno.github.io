@@ -6,11 +6,11 @@
     <title>Breno Sobral - Currículo</title>
     <style>
         :root {
-            --bg-primary: #ffffff;
-            --text-primary: #333333;
-            --text-secondary: #666666;
-            --accent: #0066cc;
-            --border: #e0e0e0;
+            --bg-primary: #1A191E;
+            --text-primary: #f0f0f0;
+            --text-secondary: #b8b8b8;
+            --accent: #5a88c5;
+            --border: #333339;
         }
 
         * {
@@ -71,7 +71,7 @@
         }
 
         .skill-category {
-            background: #f8f9fa;
+            background: #282830;
             padding: 1.5rem;
             border-radius: 8px;
         }
@@ -131,7 +131,7 @@
         }
 
         .tech-tag {
-            background: #f0f0f0;
+            background: #2d2d35;
             color: var(--text-primary);
             padding: 0.25rem 0.75rem;
             border-radius: 15px;
@@ -198,17 +198,27 @@
         <div class="contact-info">
             <span>📍 Niterói, Rio de Janeiro, Brasil</span>
             <span>📧 ssobralbreno@gmail.com</span>
-            <span>🔗 linkedin.com/in/breno-sobral</span>
+            <span>🔗 <a href="https://linkedin.com/in/breno-sobral" style="color: var(--accent); text-decoration: none;">linkedin.com/in/breno-sobral</a></span>
+            <span>🌐 <a href="https://brenosobral.com" style="color: var(--accent); text-decoration: none;">brenosobral.com</a></span>
         </div>
     </header>
 
     <section>
         <h2>RESUMO PROFISSIONAL</h2>
         <p>
-            Engenheiro de Software Sênior com mais de 8 anos de experiência, especializado em
-            desenvolvimento full-stack e arquitetura em nuvem. Comprovada expertise na construção
-            de microsserviços escaláveis, implementação de soluções em nuvem e liderança de
-            equipes de desenvolvimento. Sólido conhecimento em frameworks JavaScript modernos,
+            Engenheiro de Software Sênior com mais de 8 anos de experiência, especializado em desenvolvimento full-stack, 
+            arquitetura de sistemas e soluções em nuvem. Expertise em:
+        </p>
+        <ul>
+            <li>Construção de microsserviços escaláveis e APIs de alto desempenho</li>
+            <li>Implementação e manutenção de sistemas críticos com foco em monitoramento</li>
+            <li>Liderança técnica e atuação lado a lado com Tech Leads em decisões arquiteturais</li>
+            <li>Levantamento de requisitos e análise de implementação de soluções</li>
+            <li>Integração de sistemas complexos e implementação de workflows de negócios</li>
+        </ul>
+        <p>
+            Comprovada capacidade de transitar entre negócios e tecnologia, trazendo soluções eficientes 
+            e alinhadas às necessidades do cliente. Sólido conhecimento em frameworks JavaScript modernos, 
             plataformas cloud e padrões de arquitetura de software.
         </p>
     </section>
@@ -238,6 +248,7 @@
                     <li>APIs RESTful</li>
                     <li>GraphQL</li>
                     <li>WebSocket/SSE</li>
+                    <li>Temporal (Motor de Workflow)</li>
                 </ul>
             </div>
 
@@ -249,6 +260,20 @@
                     <li>Azure DevOps</li>
                     <li>Docker</li>
                     <li>CI/CD Pipelines</li>
+                    <li>Grafana/Kibana (Monitoramento)</li>
+                    <li>Observabilidade (Prometheus, Datadog, New Relic)</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Arquitetura</h3>
+                <ul>
+                    <li>Arquitetura Hexagonal</li>
+                    <li>Clean Architecture</li>
+                    <li>Arquitetura Orientada a Eventos</li>
+                    <li>Kafka</li>
+                    <li>Microsserviços</li>
+                    <li>Domain-Driven Design (DDD)</li>
                 </ul>
             </div>
 
@@ -263,11 +288,45 @@
                     <li>BullMQ</li>
                 </ul>
             </div>
+
+            <div class="skill-category">
+                <h3>Integrações</h3>
+                <ul>
+                    <li>Salesforce</li>
+                    <li>APIs de Terceiros</li>
+                    <li>Integrações B2B</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section>
         <h2>EXPERIÊNCIA PROFISSIONAL</h2>
+        
+        <div class="experience-item">
+            <div class="experience-header">
+                <div>
+                    <div class="company">Dexian</div>
+                    <div class="role">Desenvolvedor Fullstack Sênior</div>
+                </div>
+                <div class="period">Setembro 2024 - Presente</div>
+            </div>
+            <ul>
+                <li>Atuação lado a lado com Tech Lead no desenho e implementação de soluções complexas</li>
+                <li>Responsável direto por diversas demandas críticas de negócio e integrações</li>
+                <li>Participação ativa no levantamento de requisitos e definição de escopos de projetos</li>
+                <li>Implementação de soluções com fluxos de trabalho usando Temporal</li>
+                <li>Análise e implementação de integrações com Salesforce e outros sistemas de terceiros</li>
+                <li>Monitoramento constante e sustentação de aplicações críticas usando Grafana/Kibana</li>
+            </ul>
+            <div class="techs">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Temporal</span>
+                <span class="tech-tag">Salesforce</span>
+                <span class="tech-tag">Grafana</span>
+            </div>
+        </div>
         
         <div class="experience-item">
             <div class="experience-header">
@@ -278,17 +337,21 @@
                 <div class="period">Julho 2024 - Presente</div>
             </div>
             <ul>
-                <li>Desenvolvimento de aplicação web inovadora para Tibia MMORPG com recursos premium</li>
-                <li>Implementação de soluções avançadas incluindo reverse proxy, web scraping e SSE em tempo real</li>
-                <li>Liderança da arquitetura técnica completa e implementação</li>
+                <li>Desenvolvimento de aplicação web privada inovadora para o MMORPG Tibia, oferecendo recursos gratuitos e premium para melhorar a experiência dos jogadores</li>
+                <li>Construção do projeto do zero em parceria com Matheus Sobral, atuando como desenvolvedores, designers, criadores de conteúdo e estratégias de negócio</li>
+                <li>Implementação de soluções avançadas incluindo reverse proxy, web scraping, API TS3, API Discord e SSE em tempo real</li>
+                <li>Desenvolvimento frontend com Next.js, utilizando Chakra UI e ShadCN, estilizado com Tailwind CSS</li>
                 <li>Gestão de infraestrutura multi-cloud em GCP, Oracle e Railway</li>
+                <li>Sites: <a href="https://firebot.run" style="color: var(--accent);">firebot.run</a> e <a href="https://monitor.firebot.run" style="color: var(--accent);">monitor.firebot.run</a></li>
             </ul>
             <div class="techs">
-                <span class="tech-tag">Next.js</span>
-                <span class="tech-tag">Go</span>
+                <span class="tech-tag">Golang</span>
                 <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Tailwind CSS</span>
                 <span class="tech-tag">Chakra UI</span>
-                <span class="tech-tag">Shadcn</span>
+                <span class="tech-tag">ShadCN</span>
             </div>
         </div>
 
